@@ -1,0 +1,13 @@
+spring:
+  datasource:
+    url: ${AWS_DB_FREE}
+  jpa:
+    hibernate:
+      ddl-auto: none
+    show-sql: true
+    properties:
+      hibernate:
+        format_sql: true
+    database: postgresql
+    database-platform: org.hibernate.dialect.PostgreSQLDialect
+
